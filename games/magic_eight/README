@@ -15,7 +15,7 @@ To run the game, follow these steps:
    ```shell
    node script.js
 
-<b>Usage<b>
+Usage
 Upon running the game, you'll be prompted to enter your name.
 After providing your name, you'll be asked to input a question you seek an answer for.
 The program will provide you with a random answer from the Magic 8-Ball's list of classic responses.
