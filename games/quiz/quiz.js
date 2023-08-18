@@ -1,38 +1,58 @@
-const prompt = require("prompt-sync")()
-console.log("Welcome to the Computer Hardware Quiz!")
-let points = 0;
-
-const answer1 = prompt("What is the brain of the Computer: ")
-if(answer1.toLowerCase() === 'cpu') {
-    points++;
-    console.log(`Correct, you now have ${points} point!`)
+console.log('Welcome to Computer Quiz!')
+function playGame() {
+const prompt = require('prompt-sync')()
+const question1 = prompt("What is the brain of the computer? ")
+const answer1 = 'cpu';
+let correctAnswers = 0;
+if(question1.toLowerCase() === answer1) {
+    console.log(`Correct! `)
+    correctAnswers++;
 } else {
-    console.log(`Incorrect, you have ${points} points!`)
+    console.log(`Incorrect! `)
 }
 
-const answer2 = prompt("What is the acronym for graphics processing unit: ")
-if(answer2.toLowerCase() === 'gpu') {
-    points++;
-    console.log(`Correct, you now have ${points} points!`)
+const question2 = prompt("What is responsible for the visuals of the computer? ")
+const answer2 = 'gpu';
+if(question2.toLowerCase() === answer2) {
+    console.log(`Correct! `)
+    correctAnswers++;
 } else {
-    if(points > 0) {
-    points--;    
+    console.log(`Incorrect! `)
+    if(correctAnswers > 0) {
+    correctAnswers--;
+}
+}
+
+const question3 = prompt("The acronym for: Universal Series Bus:  ")
+const answer3 = 'usb';
+if(question3.toLowerCase() === answer3) {
+    console.log(`Correct! `)
+    correctAnswers++;
+} else {
+    console.log(`Incorrect! `)
+    if(correctAnswers > 0) {
+        correctAnswers--;
     }
-  console.log(`Incorrect, you have ${points} points!`)
 }
 
-const answer3 = prompt("Which type of connection port is commonly used for plugging in devices like keyboards and mice: ")
-if(answer3.toLowerCase() === 'usb') {
-    points++;
-    console.log(`Correct, you now have ${points} points!`)
+if(correctAnswers > 1) {
+    console.log(`You answered ${correctAnswers}/3 questions. Good Job!`)
 } else {
-    if(points > 0) {
-    points--;  
-    }  
-  console.log(`Incorrect, you have ${points} points!`)
+    console.log(`You answered ${correctAnswers}/3 questions. You still have to practice!`)
+    let playAgain = prompt(`Do you want to play again? Y or N: `)
+    if(playAgain === 'Y') {
+      
+    console.clear()
+    playGame()
+    }
+   else if(playAgain === 'N') {
+    console.log(`Have a nice day!`)
+}   
 }
 
-console.log("\nGAME OVER")
+}
+playGame()
+
 if (points > 2) {
 console.log(`Thank you for playing! You passed the quiz by answering ${points}/3 questions, CONGRATS!!!`)
 } else {
