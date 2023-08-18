@@ -52,9 +52,3 @@ if(correctAnswers > 1) {
 
 }
 playGame()
-
-if (points > 2) {
-console.log(`Thank you for playing! You passed the quiz by answering ${points}/3 questions, CONGRATS!!!`)
-} else {
-    console.log(`You still have to practice!`)
-}
