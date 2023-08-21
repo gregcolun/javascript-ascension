@@ -10,7 +10,7 @@
 4. Run the following command to start the game:
 
    ```bash
-   node main.js
+   node rps.js
 
 5. The game will prompt you to enter the number of rounds you want to play.
 6. Follow the on-screen instructions to choose rock, paper, or scissors for each round.
