@@ -1,4 +1,5 @@
 const prompt = require("prompt-sync")();
+console.log(`Welcome to Rock Paper Scissors - Man vs Computer Edition!`)
 function playGame () {
 let playerChoice;
 let losses = 0;
