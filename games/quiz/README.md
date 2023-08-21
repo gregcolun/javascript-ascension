@@ -23,12 +23,6 @@ Welcome to the Computer Quiz game! Test your knowledge of computer-related terms
 
 
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 **Disclaimer:** This quiz game is meant for educational and entertainment purposes only. The accuracy of the answers may vary, and it's recommended to verify any information independently if needed.
 
 Have fun and happy quizzing!
